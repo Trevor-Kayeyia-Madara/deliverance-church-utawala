@@ -64,6 +64,28 @@ const Navbar = () => {
             Our Ministries
             </Link>
           </li>
+          <li className="nav-item dropdown">
+            <div className="nav-links" onClick={toggle}>
+              Media  <i className="fas fa-caret-down" />
+            </div>
+            <ul className="dropdown-menu">
+              <li>
+                <Link to="/sermons/" className="dropdown-links" onClick={toggle}>
+                  Latest Sermons
+                </Link>
+              </li>
+              <li>
+                <Link to="/events/" className="dropdown-links" onClick={toggle}>
+                 Upcoming Events
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallery/" className="dropdown-links" onClick={toggle}>
+                  Our Gallery
+                </Link>
+              </li>
+            </ul>
+          </li>
           <li className="nav-item">
             <Link to="/give" className="nav-links" onClick={toggle}>
               Tithes &amp; Offerings

@@ -1,6 +1,7 @@
 .navbar {
+    padding-top: 10px;
     background: #ffffff;
-    height: 80px;
+    height: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,48 +14,54 @@
   
   .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 80px;
-    z-index: 1;
+    z-index: 999;
     width: 100%;
     padding: 0 17px;
     max-width: 2000px;
   }
   
   .nav-logo {
+    padding-left: 40px;
     font-size: 0.9em;
-    color:#7b3f00;
-
+    color: #7b3f00;
   }
-    .navbar a.text{
-      margin-left: 15px;
-     color: #7b3f00;
-     text-transform: uppercase;
-    }
-    .navbar a.text h5{
-      letter-spacing: normal;
-      font-weight: 700;
-      font-size: 16px;
-    }
-    .navbar a.text p{
-      font-size: 8px;
-    }
-  .nav-logo img{
+  
+  .navbar a.text {
+    margin-left: 15px;
+    color: #7b3f00;
+  }
+  
+  .navbar a.text h5 {
+    letter-spacing: normal;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .navbar a.text p {
+    font-size: 8px;
+  }
+  
+  .nav-logo img {
     width: 60px;
   }
+  
   .menu-icon {
     display: none;
   }
   
   .nav-menu {
-    margin-left: 10px;
+    flex-grow: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     list-style: none;
     text-align: center;
   }
+  
   
   .nav-item {
     height: 80px;
@@ -69,11 +76,11 @@
     height: 100%;
     cursor: pointer;
   }
-  .nav-links::before{
+  
+  .nav-links::before {
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-out;
-   
   }
   
   @keyframes navLinkAnimation {
@@ -87,13 +94,16 @@
       transform: scale(1);
     }
   }
-  .nav-links:hover,.dropdown-menu li a:hover {
+  
+  .nav-links:hover,
+  .dropdown-menu li a:hover {
     color: #7b3f00;
     animation-name: navLinkAnimation;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
+  
   .dropdown {
     position: relative;
   }
@@ -145,15 +155,15 @@
       width: 100%;
       height: 90vh;
       position: absolute;
-      top: 80px;
+      top: 50px;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
       overflow-y: scroll;
     }
-    .navbar-container{
-      height: auto; /* Reset height for smaller devices */
-      overflow-x: hidden; /* Disable horizontal scrolling on smaller devices */
+    .navbar-container {
+      height: auto;
+      overflow-x: hidden;
     }
     .nav-menu.active {
       background-color: #ffffff;
@@ -178,3 +188,4 @@
       cursor: pointer;
     }
   }
+  
