@@ -1,8 +1,12 @@
 import React from 'react'
+import BackgroundImage from '../../Components/BackGround/index'
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <BackgroundImage />
+    </div>
   )
 }
 

@@ -1,0 +1,65 @@
+.bg-image {
+    position: relative;
+    height: 500px;
+    background-image: url('../../Images/slide-4.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(166, 117, 25, 0.863);
+  }
+  
+  .context {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(175, 135, 1, 0.76);
+  }
+  .verse{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .image {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .bg-image {
+      height: 100%;
+    }
+  
+    .context,
+    .image {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      width: 100%;
+      text-align: center;
+    }
+    .context {
+      padding: 10px;
+    }
+  }
+  
