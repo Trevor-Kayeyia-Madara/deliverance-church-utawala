@@ -1,3 +1,3 @@
-const CHANNEL_ID = "UCbN_lHKp1o0zHi8AFL2I1Ig";
+const CHANNEL_ID = "UCRAdHhMSvLBgFXrJOJinaLA";
 
 export default CHANNEL_ID
