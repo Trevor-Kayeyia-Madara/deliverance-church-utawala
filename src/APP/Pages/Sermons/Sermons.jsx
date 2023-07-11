@@ -17,7 +17,7 @@ function Sermons() {
         {
           params: {
             part: "snippet,id",
-            channelId: "UCbN_lHKp1o0zHi8AFL2I1Ig",
+            channelId: "UCRAdHhMSvLBgFXrJOJinaLA",
             maxResults: 50,
             key:"AIzaSyDYPl4nSgJe5Ya2iI_6Luq8eulPDwoIpFY",
             order: 'date',
