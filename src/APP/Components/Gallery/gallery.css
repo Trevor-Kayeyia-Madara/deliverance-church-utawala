@@ -1,0 +1,102 @@
+.my-masonry-grid {
+  display: flex;
+  margin-left: 10px;
+  width: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 14px;
+}
+
+.my-masonry-grid_column {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-clip: padding-box;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.item-title {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  color: white;
+  padding: 5px 10px;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1100px) {
+  .my-masonry-grid {
+    margin-left: 0;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .my-masonry-grid {
+    flex-direction: column;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+}  
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 3rem;
+}
+
+.button-link {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #a67519dc;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #a67519dc;
+  transition: transform 0.3s ease;
+}
+
+.button-link:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    margin-top: 10px;
+  }
+
+  .button-link {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    margin-top: 5px;
+  }
+
+  .button-link {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,34 @@
+.slideshow {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    flex: 0 0 300px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slideshow {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .card {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  

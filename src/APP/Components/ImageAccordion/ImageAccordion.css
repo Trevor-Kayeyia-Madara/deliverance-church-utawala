@@ -1,0 +1,84 @@
+.part{
+    background-color: #a67519;
+    background-image: url("https://www.transparenttextures.com/patterns/diamonds-are-forever.png");
+}
+h1.part-title,p.part-text{
+    padding-left: 3rem;
+    padding-top: 2rem;
+    color: #fff;
+}
+.image-accordion {
+    display: flex;
+  align-items: center;
+  padding: 20px;
+  }
+  
+  .image-column {
+    flex: 0 0 500px;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .accordion-column {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition-property: all;
+    transition: all;
+  }
+  .accordion-title {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .chevron-icon {
+    margin-left: 10px;
+  }
+  
+  .accordion-content {
+    background-color: #fff;
+    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #a67519;
+    white-space: pre-line; /* Preserve line breaks */
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 1000px; /* Adjust the value to fit your content */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .image-accordion {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-column {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .accordion-column {
+    flex: 1;
+    margin-left: 0;
+    width: 100%;
+  }
+  .accordion-title {
+    width: 100%;
+  }
+}

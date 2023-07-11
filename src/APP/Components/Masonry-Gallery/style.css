@@ -1,0 +1,20 @@
+.masonry-grid {
+    padding-top: 3rem;
+    display: flex;
+    width: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .masonry-grid-column {
+    padding-left: 10px; /* Adjust padding as needed */
+    background-clip: padding-box;
+  }
+  
+  .masonry-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
