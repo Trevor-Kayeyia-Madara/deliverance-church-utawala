@@ -11,9 +11,12 @@ import family from '../../Images/Mr Muasa.jpg'
 import media from '../../Images/media-1.jpg'
 import hospitality from '../../Images/hospitality.jpg'
 import legacy from '../../Images/Gershon.jpg'
+import { Helmet } from 'react-helmet';
 
 
 const CardColumnLayout = () => {
+  const pageTitle = 'Our Ministries-Deliverance Church International Utawala | The Church Of Choice';
+  const metaDescription ='DCU Ministries. We desire to help you in the path of Christ and His Salvation. DCU is a family fraternity who loves one another and cherish God fully........'
     const cards = [
       {
         imageSrc: `${music}`, 
@@ -79,6 +82,10 @@ const CardColumnLayout = () => {
   
     return (
       <div className="card-column-layout">
+        <Helmet>
+      <title>{pageTitle}</title>
+      <meta name = "description" content={metaDescription} />
+    </Helmet>
         {cards.map((card, index) => (
           <Card
             key={index}

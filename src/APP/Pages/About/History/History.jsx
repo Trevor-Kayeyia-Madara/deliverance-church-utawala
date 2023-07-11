@@ -1,10 +1,16 @@
 import React from 'react'
 import './history.css';
-
+import { Helmet } from 'react-helmet';
 
 function History() {
+  const pageTitle = 'Our History-Deliverance Church  Utawala | The Church Of Choice';
+  const metaDescription ='In 2009, The Almight God rested faith upon Pastor Wiliam Ouna to begin Deliverance Church Utawala.........'
   return (
     <>
+    <Helmet>
+      <title>{pageTitle}</title>
+      <meta name = "description" content={metaDescription} />
+    </Helmet>
      <div className="hero">
       <div className="hero-image">
         <div className="hero-text">

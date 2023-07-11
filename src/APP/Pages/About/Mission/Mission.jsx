@@ -1,8 +1,15 @@
 import React from 'react'
 import './mission.css'
+import { Helmet } from 'react-helmet';
 function Mission() {
+  const pageTitle = 'Our Mission-Deliverance Church  Utawala | The Church Of Choice';
+  const metaDescription ='Our Mission As Deliverance Church Utawala is To Equip Mankind For The Mission Of God.'
   return (
     <>
+    <Helmet>
+      <title>{pageTitle}</title>
+      <meta name = "description" content={metaDescription} />
+    </Helmet>
     <div className="hero">
       <div className="hero-image">
         <div className="hero-text">

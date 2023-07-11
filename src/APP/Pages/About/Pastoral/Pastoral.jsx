@@ -10,8 +10,11 @@ import James from "../../../Images/james.jpg";
 import William from "../../../Images/william.jpg";
 import Mercy from "../../../Images/MERCY.jpg";
 import noImage from '../../../Images/noImage.png';
+import { Helmet } from 'react-helmet'
 
 function Pastoral() {
+  const pageTitle = 'Our Pastoral Team-Deliverance Church  Utawala | The Church Of Choice';
+  const metaDescription ='Our leadership consists of a Pastoral Team.Together, these men and women oversee God’s work and ministry to the members of DCU. Reverend Emmanuel Kokonyo Senior Pastor is the senior pastor at.'
 
     const paragraphs = [
         "Thirteen years has been and praise the Lord for His Faithfulness.As a family, we came to Utawala after serving God with Deliverance Church Athi River for nine years. Lucy and I are thankful to the Lord for His Grace that has kept us going. We want to say thank you to Bishop JB and Persiah Masinde who have provided Spiritual blessing,fatherhood and prophetic dimension in our ministry. We shall forever be grateful.",
@@ -31,6 +34,10 @@ function Pastoral() {
     
   return (
     <div>
+      <Helmet>
+      <title>{pageTitle}</title>
+      <meta name = "description" content={metaDescription} />
+    </Helmet>
        <ImageText
         name="Reverend Emmanuel and Lucy Kokonyo"
         line="Senior Pastors"
