@@ -5,6 +5,13 @@ import {  Route, Routes } from 'react-router-dom'
 import NavBar from './Components/NavBar/NavBar'
 import Home from './Pages/Home'
 import Footer from './Components/Footer'
+import History from '../APP/Pages/About/History/History'
+import Mission from '../APP/Pages/About/Mission/Mission';
+import Pastoral from '../APP/Pages/About/Pastoral/Pastoral';
+import Ministry from '../APP/Pages/Ministries/Ministry';
+import Sermons from '../APP/Pages/Sermons/Sermons';
+import Live from '../APP/Pages/Live/Live';
+
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -37,6 +44,12 @@ function App() {
     <NavBar />
       <Routes>
         <Route path='/' element ={<Home />} />
+        <Route path='/About/Mission' element={<Mission />} />
+        <Route path='/ministries' element={<Ministry />} />
+        <Route path='/About/Pastoral' element={<Pastoral />} />
+        <Route path='/About/History' element={<History />} />
+        <Route path='/Sermons/' element={<Sermons />} />
+        <Route path='/Live/livestream' element={<Live />} />
       </Routes>
       {showButton && (
         <button

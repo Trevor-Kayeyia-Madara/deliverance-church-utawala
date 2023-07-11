@@ -1,0 +1,138 @@
+/*  ----------------------------------------------------------------
+VIDEO SERMONS
+----------------------------------------------------------------*/
+     
+      .video-content {
+        padding-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #a67519;
+        background-image: url("https://www.transparenttextures.com/patterns/diamonds-are-forever.png");
+        color: white;
+      }
+      
+      .video {
+        flex: 1;
+        padding-bottom: 2rem;
+        color: white;
+      }
+     .video-iframe iframe{
+      width:500px;
+      height:315px;
+     }
+      .text-right {
+        flex: 1;
+        padding: 0 1rem;
+      }
+  
+      @media screen and (max-width: 768px) {
+        .video-content{
+          flex-direction: column;
+        }
+        .video-iframe iframe{
+          width: 100%;
+        }
+        .video, .text {
+          order: 0;
+          flex: auto;
+        }
+      }
+      .welcome, .about {
+        text-align: center;
+      }
+      .component {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .church-container {
+        margin-right: 20px;
+      }
+      
+      .church {
+        width: 1000px;
+        height: auto;
+        padding-left: 20px;
+      }
+      
+      .paragraph-container {
+        flex-grow: 1;
+        padding-right: 20px;
+      }
+      
+      .paragraph {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      
+      .prolong-w {
+        font-size: 4em;
+        line-height: 0.6;
+        letter-spacing: -0.08em;
+      }
+      
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+        .component {
+          flex-direction: column;
+          text-align: center;
+        }
+      
+        .church-container {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      
+        .church {
+          width: 150px;
+        }
+      
+        .paragraph {
+          font-size: 14px;
+        }
+      
+        .prolong-w {
+          font-size: 3em;
+          line-height: 0.8;
+          letter-spacing: -0.05em;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .component {
+          align-items: center;
+        }
+      
+        .church-container {
+          margin-bottom: 5px;
+        }
+      
+        .church {
+          width: 100%;
+        }
+      
+        .paragraph {
+          font-size: 12px;
+        }
+        .about {
+          text-align: center;
+          font-style: italic;
+        }
+      
+        .prolong-w {
+          font-size: 2em;
+          line-height: 1;
+          letter-spacing: -0.03em;
+        }
+      }
+    .ministries{
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 50px;
+    }
+ 

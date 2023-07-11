@@ -1,0 +1,79 @@
+   /* ----------
+      Hero-Image
+      ---------- */
+      .hero {
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .hero-image {
+      background-image: linear-gradient(rgba(166, 66, 9, 0.836), rgba(166, 66, 9, 0.836)), url('../../../Images/hero.jpg');
+      height: 40vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .hero-text {
+      text-align: left;
+      position: absolute;
+      top: 10px;
+      left: 4px;
+      color: white;
+    }
+    
+    .hero-text h1{
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .hero-text h4{
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+   }
+/* -------------
+        History
+        ---------*/
+        .history{
+            top: 0;
+            height: 100%;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+          }
+          .history-content{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+          .history-image{
+            padding-top: 2rem;
+            padding-left: 350px;
+          }
+          .history-content p{
+            text-align: left;
+          }
+@media screen and (max-width: 968px) {
+    .hero{
+        width: 100%;
+      }
+      .hero-image{
+      height: 15vh;
+      background-position: center;
+      background-size: cover;
+      }
+      .hero-text{
+      
+      text-align: left;
+      position: absolute;
+      top: 20%;
+      left: 4%;
+      }
+      .history-image{
+        width: 100%;
+      }
+}
