@@ -1,0 +1,15 @@
+.young {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .young-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .young p {
+    margin-bottom: 10px;
+  }
+  

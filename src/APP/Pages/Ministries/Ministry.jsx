@@ -52,7 +52,7 @@ const CardColumnLayout = () => {
         imageSrc: `${young}`,
         title: 'Young Adults',
         description: 'We are a group of young beautiful and handsome young people yearning for Christ, worshipping Him and striving to influence our fellow peers to follow Him through our Ministry...',
-        link: '/ministries/young/',
+        link: '/ministries/young-adults/',
       },
       {
         imageSrc: `${legacy}`,

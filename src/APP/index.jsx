@@ -5,12 +5,13 @@ import {  Route, Routes } from 'react-router-dom'
 import NavBar from './Components/NavBar/NavBar'
 import Home from './Pages/Home'
 import Footer from './Components/Footer'
-import History from '../APP/Pages/About/History/History'
-import Mission from '../APP/Pages/About/Mission/Mission';
-import Pastoral from '../APP/Pages/About/Pastoral/Pastoral';
-import Ministry from '../APP/Pages/Ministries/Ministry';
-import Sermons from '../APP/Pages/Sermons/Sermons';
-import Live from '../APP/Pages/Live/Live';
+import History from './Pages/About/History/History'
+import Mission from './Pages/About/Mission/Mission';
+import Pastoral from './Pages/About/Pastoral/Pastoral';
+import Ministry from './Pages/Ministries/Ministry';
+import Sermons from './Pages/Sermons/Sermons';
+import Live from './Pages/Live/Live';
+import Young from './Pages/Ministries/Young/index';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
         <Route path='/About/History' element={<History />} />
         <Route path='/Sermons/' element={<Sermons />} />
         <Route path='/Live/livestream' element={<Live />} />
+        <Route path='/ministries/young-adults' element={<Young />} />
       </Routes>
       {showButton && (
         <button
