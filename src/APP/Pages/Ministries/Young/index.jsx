@@ -1,45 +1,31 @@
-import React, {useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import { Helmet } from 'react-helmet';
-
+import Masonry from 'react-masonry-css';
 
 function Young() {
-    const [photos, setPhotos] = useState([]);
+  const [photos, setPhotos] = useState([]);
+
   const pageTitle = 'Young Adults-Deliverance Church Utawala | The Church Of Choice';
   const metaDescription = 'We are a group of young beautiful and handsome young people yearning for Christ, worshipping Him and striving to influence our...';
 
-  const clientId = '552500022152-jgr8lv00skcm9g1b0ambf1klirp11fr1.apps.googleusercontent.com';
-  const albumId = 'AF1QipOSIJXlWqADdvZ-LruiecsDEV--FgMeFJJXhERU';
-
   useEffect(() => {
-    const fetchPhotos = async () => {
-      try {
-        const response = await fetch(
-          `https://photoslibrary.googleapis.com/v1/mediaItems:search?key=${clientId}`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              albumId: albumId,
-            }),
-          }
-        );
-
-        if (response.ok) {
-          const data = await response.json();
-          setPhotos(data.mediaItems);
-        } else {
-          throw new Error('Failed to fetch photos');
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchPhotos();
+    // Fetch photos or use any other method to populate the `photos` state
+    const fetchedPhotos = [
+      'https://example.com/photo1.jpg',
+      'https://example.com/photo2.jpg',
+      'https://example.com/photo3.jpg',
+      // Add more photo URLs as needed
+    ];
+    setPhotos(fetchedPhotos);
   }, []);
+
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1,
+  };
 
   return (
     <>
@@ -61,9 +47,15 @@ function Young() {
 
         <h2>Worship Experience Gallery</h2>
         <div className="gallery">
-          {photos.map((photo) => (
-            <img key={photo.id} src={photo.baseUrl} alt={photo.filename} className="gallery-image" />
-          ))}
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="masonry-grid"
+            columnClassName="masonry-grid-column"
+          >
+            {photos.map((photo, index) => (
+              <img key={index} src={photo} alt={`church ${index + 1}`} />
+            ))}
+          </Masonry>
         </div>
       </section>
     </>

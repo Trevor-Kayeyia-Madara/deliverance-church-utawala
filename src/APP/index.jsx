@@ -12,6 +12,7 @@ import Ministry from './Pages/Ministries/Ministry';
 import Sermons from './Pages/Sermons/Sermons';
 import Live from './Pages/Live/Live';
 import Young from './Pages/Ministries/Young/index';
+import CreateRegistrationForm from './Components/Form';
 
 
 function App() {
