@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <div>
       <BackgroundImage />
-      <Link to='/entreprenuership/register'>Register Now</Link>
+      <Link to='/register'>Register Now</Link>
      <Group />
       <ImageAccordion
         imageSrc={image}
