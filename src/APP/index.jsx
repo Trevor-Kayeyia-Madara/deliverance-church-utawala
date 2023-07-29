@@ -12,6 +12,7 @@ import Ministry from './Pages/Ministries/Ministry';
 import Sermons from './Pages/Sermons/Sermons';
 import Live from './Pages/Live/Live';
 import Young from './Pages/Ministries/Young/index';
+import AttendeeForm from './Components/Register';
 
 
 
@@ -47,6 +48,7 @@ function App() {
     <NavBar />
       <Routes>
         <Route path='/' element ={<Home />} />
+        <Route path='/register' element ={<AttendeeForm />} />
         <Route path='/About/Mission' element={<Mission />} />
         <Route path='/ministries' element={<Ministry />} />
         <Route path='/About/Pastoral' element={<Pastoral />} />
