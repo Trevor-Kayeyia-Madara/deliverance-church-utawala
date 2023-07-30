@@ -9,6 +9,25 @@ import Gallery from '../../Components/Masonry-Gallery'
 
 
 const Home = () => {
+  const containerStyle = {
+    maxWidth: '500px',
+    margin: '0 auto',
+    padding: '20px',
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    textAlign: 'center',
+  };
+
+  const linkStyle = {
+    display: 'inline-block',
+    marginTop: '10px',
+    padding: '10px 20px',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    textDecoration: 'none',
+    borderRadius: '3px',
+  };
 
   const accordionItems = [
     {
@@ -31,7 +50,14 @@ const Home = () => {
   return (
     <div>
       <BackgroundImage />
-      <Link to='/register'>Register Now</Link>
+      <div style={containerStyle}>
+      <p>
+        DC Utawala invites you to a day of entrepreneurship and financial training on 9th August 2023 at the ...
+        The training will be done by Mr. Tim Abels, a serial entrepreneur, technology disruptor, investor, and global ministry leader.
+        Tim has a heart for Christian companies operating as BAMs (Business as Mission) and seeks to connect Christian Entrepreneurs and Investors to multiply Kingdom wealth and impact.
+      </p>
+      <Link to='/register' style={linkStyle}>Register Now</Link>
+    </div>
      <Group />
       <ImageAccordion
         imageSrc={image}

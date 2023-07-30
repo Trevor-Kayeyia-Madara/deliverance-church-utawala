@@ -1,210 +1,130 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './style.css'
 const AttendeeForm = () => {
-  const [attendeeData, setAttendeeData] = useState({
+  const [formData, setFormData] = useState({
     title: '',
-    first_name: '',
-    last_name: '',
+    firstName: '',
+    lastName: '',
     email: '',
-    telephone_number: '',
-    micro_church: '',
-    business_name: '',
-    business_industry: '',
-    duration: '',
-    already_in_business: false,
-    aspiring_to_start_business: false,
+    phoneNumber: '',
+    microChurch: '',
   });
 
-  const [error, setError] = useState('');
-
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    const newValue = type === 'checkbox' ? checked : value;
-    setAttendeeData((prevState) => ({
-      ...prevState,
-      [name]: newValue,
-    }));
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Ensure only one checkbox is selected
-    if (attendeeData.already_in_business && attendeeData.aspiring_to_start_business) {
-      setError('Please select only one option.');
-      return;
-    }
-
-    setError('');
-
-    // Prepare the data to be sent in the POST request
-    const postData = {
-      ...attendeeData,
-      already_in_business: attendeeData.already_in_business ? 'Yes' : '',
-      aspiring_to_start_business: attendeeData.aspiring_to_start_business ? 'Aspiring' : '',
-    };
-
-    axios
-      .post('/attendees', postData) // Use the correct API endpoint here ('/attendees')
+    axios.post('/register', formData)
       .then((response) => {
-        // Handle successful response
-        console.log('Attendee registration successful!', response.data);
+        console.log(response.data.message);
+        // Show success Toast notification
+        toast.success('Form submitted successfully!', {
+          position: 'top-center',
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+
+        // Reset the form after successful submission
+        setFormData({
+          title: '',
+          firstName: '',
+          lastName: '',
+          email: '',
+          phoneNumber: '',
+          microChurch: '',
+        });
       })
       .catch((error) => {
-        // Handle error
-        console.error('Error registering attendee:', error);
+        console.error(error);
+        // Show error Toast notification
+        toast.error('Failed to submit the form.', {
+          position: 'top-center',
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
       });
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>
-          Title:
-          <select
-            name="title"
-            value={attendeeData.title}
-            onChange={handleChange}
-            required
-          >
-            <option value="">Select Title</option>
-            <option value="Mr">MR</option>
-            <option value="Mrs">MRS</option>
-            <option value="Miss">MISS</option>
-            <option value="Pastor">PASTOR</option>
-            <option value="Reverend">REVEREND</option>
-            <option value="Bishop">BISHOP</option>
-          </select>
-        </label>
-      </div>
-      <div>
-        <label>
-          First Name:
-          <input
-            type="text"
-            name="first_name"
-            value={attendeeData.first_name}
-            onChange={handleChange}
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Last Name:
-          <input
-            type="text"
-            name="last_name"
-            value={attendeeData.last_name}
-            onChange={handleChange}
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={attendeeData.email}
-            onChange={handleChange}
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Telephone Number:
-          <input
-            type="text"
-            name="telephone_number"
-            value={attendeeData.telephone_number}
-            onChange={handleChange}
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Micro Church:
-          <input
-            type="text"
-            name="micro_church"
-            value={attendeeData.micro_church}
-            onChange={handleChange}
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Already in Business:
-          <input
-            type="checkbox"
-            name="already_in_business"
-            checked={attendeeData.already_in_business}
-            onChange={handleChange}
-          />
-        </label>
-      </div>
-      {attendeeData.already_in_business && (
-        <div>
-          <label>
-            Business Name:
-            <input
-              type="text"
-              name="business_name"
-              value={attendeeData.business_name}
-              onChange={handleChange}
-              required={attendeeData.already_in_business}
-            />
-          </label>
-        </div>
-      )}
-      {attendeeData.already_in_business && (
-        <div>
-          <label>
-            Business Industry:
-            <input
-              type="text"
-              name="business_industry"
-              value={attendeeData.business_industry}
-              onChange={handleChange}
-              required={attendeeData.already_in_business}
-            />
-          </label>
-        </div>
-      )}
-      {attendeeData.already_in_business && (
-        <div>
-          <label>
-            Duration:
-            <input
-              type="text"
-              name="duration"
-              value={attendeeData.duration}
-              onChange={handleChange}
-              required={attendeeData.already_in_business}
-            />
-          </label>
-        </div>
-      )}
-      <div>
-        <label>
-          Aspiring to Start a Business:
-          <input
-            type="checkbox"
-            name="aspiring_to_start_business"
-            checked={attendeeData.aspiring_to_start_business}
-            onChange={handleChange}
-          />
-        </label>
-      </div>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <button type="submit">Register</button>
-    </form>
+    <div className="form-container">
+      <h1>Registration Form</h1>
+      <form onSubmit={handleSubmit}>
+        <label>Title:</label>
+        <select name="title" value={formData.title} onChange={handleChange}>
+          <option value="">Select Title</option>
+          <option value="Dr">Dr</option>
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Miss">Miss</option>
+          <option value="Pastor">Pastor</option>
+          <option value="Reverend">Reverend</option>
+          <option value="Bishop">Bishop</option>
+        </select>
+        <br />
+
+        <label>First Name:</label>
+        <input
+          type="text"
+          name="firstName"
+          value={formData.firstName}
+          onChange={handleChange}
+        />
+        <br />
+
+        <label>Last Name:</label>
+        <input
+          type="text"
+          name="lastName"
+          value={formData.lastName}
+          onChange={handleChange}
+        />
+        <br />
+
+        <label>Email:</label>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        <br />
+
+        <label>Telephone Number (with Country Code):</label>
+        <input
+          type="text"
+          name="phoneNumber"
+          value={formData.phoneNumber}
+          onChange={handleChange}
+        />
+        <br />
+
+        <label>Micro-Church:</label>
+        <input
+          type="text"
+          name="microChurch"
+          value={formData.microChurch}
+          onChange={handleChange}
+        />
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      {/* Render the ToastContainer */}
+      <ToastContainer />
+    </div>
   );
 };
-
 export default AttendeeForm;
