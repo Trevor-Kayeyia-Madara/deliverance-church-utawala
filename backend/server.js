@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const db = new sqlite3.Database('register.db', (err) => {
+const db = new sqlite3.Database('data.db', (err) => {
   if (err) {
     console.error('Error connecting to SQLite database:', err);
   } else {

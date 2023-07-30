@@ -2,17 +2,18 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './style.css'
+import './style.css';
+
 const AttendeeForm = () => {
   const [formData, setFormData] = useState({
     title: '',
-    firstName: '',
-    lastName: '',
+    first_name: '',
+    last_name: '',
     email: '',
-    phoneNumber: '',
-    microChurch: '',
-    areaOfResidence:'',
-    businessInterest:'',
+    telephone_number: '',
+    micro_church: '',
+    area_of_residence: '',
+    business_interest: '',
   });
 
   const handleChange = (e) => {
@@ -38,13 +39,13 @@ const AttendeeForm = () => {
         // Reset the form after successful submission
         setFormData({
           title: '',
-          firstName: '',
-          lastName: '',
+          first_name: '',
+          last_name: '',
           email: '',
-          phoneNumber: '',
-          microChurch: '',
-          areaOfResidence:'',
-          businessInterest:'',
+          telephone_number: '',
+          micro_church: '',
+          area_of_residence: '',
+          business_interest: '',
         });
       })
       .catch((error) => {
@@ -81,8 +82,8 @@ const AttendeeForm = () => {
         <label>First Name:</label>
         <input
           type="text"
-          name="firstName"
-          value={formData.firstName}
+          name="first_name"
+          value={formData.first_name}
           onChange={handleChange}
         />
         <br />
@@ -90,8 +91,8 @@ const AttendeeForm = () => {
         <label>Last Name:</label>
         <input
           type="text"
-          name="lastName"
-          value={formData.lastName}
+          name="last_name"
+          value={formData.last_name}
           onChange={handleChange}
         />
         <br />
@@ -108,8 +109,8 @@ const AttendeeForm = () => {
         <label>Telephone Number (with Country Code):</label>
         <input
           type="text"
-          name="phoneNumber"
-          value={formData.phoneNumber}
+          name="telephone_number"
+          value={formData.telephone_number}
           onChange={handleChange}
         />
         <br />
@@ -117,25 +118,27 @@ const AttendeeForm = () => {
         <label>Micro-Church:</label>
         <input
           type="text"
-          name="microChurch"
-          value={formData.microChurch}
+          name="micro_church"
+          value={formData.micro_church}
           onChange={handleChange}
         />
         <br />
         <label>Area of Residence: </label>
         <input
-              type='text'
-              name='areaOfResidence'
-              value={formData.areaOfResidence}
-              onChange={handleChange}
+          type="text"
+          name="area_of_residence"
+          value={formData.area_of_residence}
+          onChange={handleChange}
         />
-         <label>Business Interest: </label>
+        <br />
+        <label>Business Interest: </label>
         <input
-              type='text'
-              name='businessInterest'
-              value={formData.businessInterest}
-              onChange={handleChange}
+          type="text"
+          name="business_interest"
+          value={formData.business_interest}
+          onChange={handleChange}
         />
+        <br />
         <button type="submit">Submit</button>
       </form>
 
@@ -144,4 +147,5 @@ const AttendeeForm = () => {
     </div>
   );
 };
+
 export default AttendeeForm;
