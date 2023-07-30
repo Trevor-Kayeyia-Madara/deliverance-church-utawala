@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './style.css';
 
 const AttendeeForm = () => {
+  const backendApiUrl = 'https://register-kt5k.onrender.com/';
   const [formData, setFormData] = useState({
     title: '',
     first_name: '',
@@ -23,7 +24,7 @@ const AttendeeForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('/register', formData)
+    axios.post(`${backendApiUrl}/register`, formData)
       .then((response) => {
         console.log(response.data.message);
         // Show success Toast notification
