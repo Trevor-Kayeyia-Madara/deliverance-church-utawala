@@ -11,6 +11,8 @@ const AttendeeForm = () => {
     email: '',
     phoneNumber: '',
     microChurch: '',
+    areaOfResidence:'',
+    businessInterest:'',
   });
 
   const handleChange = (e) => {
@@ -41,6 +43,8 @@ const AttendeeForm = () => {
           email: '',
           phoneNumber: '',
           microChurch: '',
+          areaOfResidence:'',
+          businessInterest:'',
         });
       })
       .catch((error) => {
@@ -118,7 +122,20 @@ const AttendeeForm = () => {
           onChange={handleChange}
         />
         <br />
-
+        <label>Area of Residence: </label>
+        <input
+              type='text'
+              name='areaOfResidence'
+              value={formData.areaOfResidence}
+              onChange={handleChange}
+        />
+         <label>Business Interest: </label>
+        <input
+              type='text'
+              name='businessInterest'
+              value={formData.businessInterest}
+              onChange={handleChange}
+        />
         <button type="submit">Submit</button>
       </form>
 
