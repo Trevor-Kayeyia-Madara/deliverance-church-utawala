@@ -142,13 +142,17 @@ const AttendeeForm = () => {
           onChange={handleChange}
         />
         <br />
-        <label>Years In Business. If Starting, Indicate 0</label>
-        <input
-            type="text"
-            name='years_in_business'
-            value={formData.years_in_business}
-            onChange={handleChange}
-            />
+        <label>Years In Business:</label>
+        <select name="years_in_business" value={formData.years_in_business} onChange={handleChange}>
+          <option value="">Select Years</option>
+          <option value="0">0</option>
+          <option value="1">1 year</option>
+          <option value="2">2 years</option>
+          <option value="3">3 years</option>
+          <option value="4">4 years</option>
+          <option value="5">5 years</option>
+          <option value="Over 5 years">Over 5 years</option>
+        </select>
         <button type="submit">Submit</button>
       </form>
 
