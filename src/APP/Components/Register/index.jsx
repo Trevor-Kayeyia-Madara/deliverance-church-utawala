@@ -24,21 +24,6 @@ const AttendeeForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Validate the form data before submitting
-    if (formData.first_name.trim() === '') {
-      toast.error('Please enter your first name.', {
-        position: 'top-center',
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-      });
-      return; // Stop form submission if first_name is empty
-    }
-
-    // Continue with form submission if the first_name is not empty
     axios.post(`${backendApiUrl}/register`, formData)
       .then((response) => {
         console.log(response.data.message);
@@ -139,7 +124,6 @@ const AttendeeForm = () => {
           onChange={handleChange}
         />
         <br />
-        
         <label>Area of Residence: </label>
         <input
           type="text"
@@ -148,7 +132,6 @@ const AttendeeForm = () => {
           onChange={handleChange}
         />
         <br />
-        
         <label>Business Interest: </label>
         <input
           type="text"
@@ -157,7 +140,6 @@ const AttendeeForm = () => {
           onChange={handleChange}
         />
         <br />
-
         <button type="submit">Submit</button>
       </form>
 
