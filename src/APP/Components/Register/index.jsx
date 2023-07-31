@@ -88,6 +88,7 @@ const AttendeeForm = () => {
           name="first_name"
           value={formData.first_name}
           onChange={handleChange}
+          required
         />
         <br />
 
@@ -97,6 +98,7 @@ const AttendeeForm = () => {
           name="last_name"
           value={formData.last_name}
           onChange={handleChange}
+          required
         />
         <br />
 
@@ -106,6 +108,7 @@ const AttendeeForm = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
+          required
         />
         <br />
 
@@ -115,6 +118,7 @@ const AttendeeForm = () => {
           name="telephone_number"
           value={formData.telephone_number}
           onChange={handleChange}
+          required
         />
         <br />
 
@@ -124,6 +128,7 @@ const AttendeeForm = () => {
           name="micro_church"
           value={formData.micro_church}
           onChange={handleChange}
+          required
         />
         <br />
         <label>Area of Residence: </label>
@@ -132,6 +137,7 @@ const AttendeeForm = () => {
           name="area_of_residence"
           value={formData.area_of_residence}
           onChange={handleChange}
+          required
         />
         <br />
         <label>Business Interest: </label>
@@ -140,10 +146,11 @@ const AttendeeForm = () => {
           name="business_interest"
           value={formData.business_interest}
           onChange={handleChange}
+          required
         />
         <br />
         <label>Years In Business:</label>
-        <select name="years_in_business" value={formData.years_in_business} onChange={handleChange}>
+        <select name="years_in_business" value={formData.years_in_business} onChange={handleChange} required>
           <option value="">Select Years</option>
           <option value="0">0</option>
           <option value="1">1 year</option>
