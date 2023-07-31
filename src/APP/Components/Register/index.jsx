@@ -15,6 +15,7 @@ const AttendeeForm = () => {
     micro_church: '',
     area_of_residence: '',
     business_interest: '',
+    years_in_business: '',
   });
 
   const handleChange = (e) => {
@@ -47,6 +48,7 @@ const AttendeeForm = () => {
           micro_church: '',
           area_of_residence: '',
           business_interest: '',
+          years_in_business: '',
         });
       })
       .catch((error) => {
@@ -140,6 +142,13 @@ const AttendeeForm = () => {
           onChange={handleChange}
         />
         <br />
+        <label>Years In Business. If Starting, Indicate 0</label>
+        <input
+            type="text"
+            name='years_in_business'
+            value={formData.years_in_business}
+            onChange={handleChange}
+            />
         <button type="submit">Submit</button>
       </form>
 
