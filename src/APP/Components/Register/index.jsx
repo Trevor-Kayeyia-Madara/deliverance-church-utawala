@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './style.css';
 
 const AttendeeForm = () => {
-  const backendApiUrl = 'https://register-55xg.onrender.com/';
+  const backendApiUrl = 'https://node-register.onrender.com';
   const [formData, setFormData] = useState({
     title: '',
     first_name: '',
