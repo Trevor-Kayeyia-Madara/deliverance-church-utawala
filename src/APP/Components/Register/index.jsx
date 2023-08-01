@@ -70,7 +70,7 @@ const AttendeeForm = () => {
       <h1>Registration Form</h1>
       <form onSubmit={handleSubmit}>
         <label>Title:</label>
-        <select name="title" value={formData.title} onChange={handleChange}>
+        <select name="title" value={formData.title} onChange={handleChange} required>
           <option value="">Select Title</option>
           <option value="Dr">Dr</option>
           <option value="Mr">Mr</option>
@@ -118,6 +118,7 @@ const AttendeeForm = () => {
           name="telephone_number"
           value={formData.telephone_number}
           onChange={handleChange}
+          placeholder = "+2547xxxxxxx"
           required
         />
         <br />
