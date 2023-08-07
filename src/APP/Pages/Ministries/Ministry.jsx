@@ -40,7 +40,7 @@ const CardColumnLayout = () => {
         imageSrc: `${cell}`,
         title: 'Micro-Churches',
         description: 'I greet you in the name of Our Lord and Savior Jesus Christ. Welcome to the Micro Church page. All the believers devoted themselves ...',
-        link: '/ministries/micro-Churches',
+        link: '/ministries/micro-churches',
       },
       {
         imageSrc: `${men}`,

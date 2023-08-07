@@ -1,0 +1,162 @@
+[
+  {
+    "MICROID": 1,
+    "MICROCHURCH": "UTUKUFU",
+    "ZONEID": 1
+  },
+  {
+    "MICROID": 2,
+    "MICROCHURCH": "DOXA",
+    "ZONEID": 1
+  },
+  {
+    "MICROID": 3,
+    "MICROCHURCH": "JUDEA",
+    "ZONEID": 1
+  },
+  {
+    "MICROID": 4,
+    "MICROCHURCH": "JERUSALEM",
+    "ZONEID": 1
+  },
+  {
+    "MICROID": 5,
+    "MICROCHURCH": "VINEYARD",
+    "ZONEID": 1
+  },
+  {
+    "MICROID": 6,
+    "MICROCHURCH": "GLORY",
+    "ZONEID": 1
+  },
+  {
+    "MICROID": 7,
+    "MICROCHURCH": "BETHSAIDIA",
+    "ZONEID": 2
+  },
+  {
+    "MICROID": 8,
+    "MICROCHURCH": "NEEMA A",
+    "ZONEID": 2
+  },
+  {
+    "MICROID": 9,
+    "MICROCHURCH": "NEEMA B",
+    "ZONEID": 2
+  },
+  {
+    "MICROID": 10,
+    "MICROCHURCH": "BARAKA A",
+    "ZONEID": 2
+  },
+  {
+    "MICROID": 11,
+    "MICROCHURCH": "BARAKA B",
+    "ZONEID": 2
+  },
+  {
+    "MICROID": 12,
+    "MICROCHURCH": "BETHEL",
+    "ZONEID": 2
+  },
+  {
+    "MICROID": 13,
+    "MICROCHURCH": "NAZARETH",
+    "ZONEID": 2
+  },
+  {
+    "MICROID": 14,
+    "MICROCHURCH": "KINGDOM",
+    "ZONEID": 2
+  },
+  {
+    "MICROID": 15,
+    "MICROCHURCH": "EBENEZER",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 16,
+    "MICROCHURCH": "DOMINION",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 17,
+    "MICROCHURCH": "OVERCOMERS",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 18,
+    "MICROCHURCH": "SHALOM",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 19,
+    "MICROCHURCH": "SHAMMAH",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 20,
+    "MICROCHURCH": "VISION",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 21,
+    "MICROCHURCH": "GENESIS",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 22,
+    "MICROCHURCH": "BELIEVERS",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 23,
+    "MICROCHURCH": "THRONE",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 24,
+    "MICROCHURCH": "SHEKINAH",
+    "ZONEID": 3
+  },
+  {
+    "MICROID": 25,
+    "MICROCHURCH": "IMANI",
+    "ZONEID": 4
+  },
+  {
+    "MICROID": 26,
+    "MICROCHURCH": "TUMAINI",
+    "ZONEID": 4
+  },
+  {
+    "MICROID": 27,
+    "MICROCHURCH": "BEREA",
+    "ZONEID": 4
+  },
+  {
+    "MICROID": 28,
+    "MICROCHURCH": "TRANSFORMERS",
+    "ZONEID": 4
+  },
+  {
+    "MICROID": 29,
+    "MICROCHURCH": "WISDOM A",
+    "ZONEID": 4
+  },
+  {
+    "MICROID": 30,
+    "MICROCHURCH": "WISDOM B",
+    "ZONEID": 4
+  },
+  {
+    "MICROID": 31,
+    "MICROCHURCH": "WISDOM C",
+    "ZONEID": 4
+  },
+  {
+    "MICROID": 32,
+    "MICROCHURCH": "WISDOM D",
+    "ZONEID": 4
+  }
+]
