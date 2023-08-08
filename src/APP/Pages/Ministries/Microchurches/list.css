@@ -1,0 +1,6 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; /* Adjust the margin as needed */
+  }
+  
