@@ -5,6 +5,7 @@ import Group from '../../Components/Gallery'
 import ImageAccordion from '../../Components/ImageAccordion/ImageAccordion'
 import image from '../../Images/sunday.jpg'
 import Gallery from '../../Components/Masonry-Gallery'
+import ThreeColumnSection from './column'
 
 
 
@@ -50,6 +51,7 @@ const Home = () => {
   return (
     <div>
       <BackgroundImage />
+      <ThreeColumnSection />
       <div style={containerStyle}>
       <p>
         DC Utawala invites you to a day of entrepreneurship and financial training on 9th August 2023 at the ...
@@ -59,6 +61,7 @@ const Home = () => {
       <Link to='/register' style={linkStyle}>Register Now</Link>
     </div>
      <Group />
+
       <ImageAccordion
         imageSrc={image}
         accordionItems={accordionItems}

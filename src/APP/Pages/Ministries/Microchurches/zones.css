@@ -1,0 +1,32 @@
+/* ZoneSelector.css */
+
+.zone-selector {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .zone-box {
+    border: 1px solid #ccc;
+    padding: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .zone-box.selected {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .zone-box:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .zone-header {
+    font-weight: bold;
+  }
+  
+  .zone-name {
+    font-style: italic;
+    color: #888;
+  }
+  
