@@ -24,6 +24,7 @@ const MicrochurchList = ({ microchurches }) => {
           <Card key={mc.MICROID} className="microchurch-card">
             <Card.Body>
               <Card.Title>{mc.MICROCHURCH}</Card.Title>
+              <Card.Text>Region: {mc.REGION}</Card.Text>
             </Card.Body>
           </Card>
         ))}

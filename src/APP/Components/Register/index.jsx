@@ -7,15 +7,12 @@ import './style.css';
 const AttendeeForm = () => {
   const backendApiUrl = 'https://node-register.onrender.com';
   const [formData, setFormData] = useState({
-    title: '',
     first_name: '',
     last_name: '',
     email: '',
     telephone_number: '',
     micro_church: '',
     area_of_residence: '',
-    business_interest: '',
-    years_in_business: '',
   });
 
   const handleChange = (e) => {
@@ -40,15 +37,12 @@ const AttendeeForm = () => {
 
         // Reset the form after successful submission
         setFormData({
-          title: '',
           first_name: '',
           last_name: '',
           email: '',
           telephone_number: '',
           micro_church: '',
           area_of_residence: '',
-          business_interest: '',
-          years_in_business: '',
         });
       })
       .catch((error) => {
@@ -67,19 +61,8 @@ const AttendeeForm = () => {
 
   return (
     <div className="form-container">
-      <h1>Registration Form</h1>
+      <h1>Registration To Attend</h1>
       <form onSubmit={handleSubmit}>
-        <label>Title:</label>
-        <select name="title" value={formData.title} onChange={handleChange} required>
-          <option value="">Select Title</option>
-          <option value="Dr">Dr</option>
-          <option value="Mr">Mr</option>
-          <option value="Mrs">Mrs</option>
-          <option value="Miss">Miss</option>
-          <option value="Pastor">Pastor</option>
-          <option value="Reverend">Reverend</option>
-          <option value="Bishop">Bishop</option>
-        </select>
         <br />
 
         <label>First Name:</label>
@@ -112,13 +95,13 @@ const AttendeeForm = () => {
         />
         <br />
 
-        <label>Telephone Number (with Country Code):</label>
+        <label>Telephone Number :</label>
         <input
           type="text"
           name="telephone_number"
           value={formData.telephone_number}
           onChange={handleChange}
-          placeholder = "+2547xxxxxxx"
+          placeholder = "07xxxxxxx"
           required
         />
         <br />
@@ -141,26 +124,6 @@ const AttendeeForm = () => {
           required
         />
         <br />
-        <label>Business Interest: </label>
-        <input
-          type="text"
-          name="business_interest"
-          value={formData.business_interest}
-          onChange={handleChange}
-          required
-        />
-        <br />
-        <label>Years In Business:</label>
-        <select name="years_in_business" value={formData.years_in_business} onChange={handleChange} required>
-          <option value="">Select Years</option>
-          <option value="0">0</option>
-          <option value="1">1 year</option>
-          <option value="2">2 years</option>
-          <option value="3">3 years</option>
-          <option value="4">4 years</option>
-          <option value="5">5 years</option>
-          <option value="Over 5 years">Over 5 years</option>
-        </select>
         <button type="submit">Submit</button>
       </form>
 

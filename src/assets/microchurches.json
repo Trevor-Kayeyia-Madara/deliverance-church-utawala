@@ -2,161 +2,193 @@
   {
     "MICROID": 1,
     "MICROCHURCH": "UTUKUFU",
+    "REGION":"KINCAR TO COKE DEPOT AREA",
     "ZONEID": 1
   },
   {
     "MICROID": 2,
     "MICROCHURCH": "DOXA",
+    "REGION":"OPPOSITE CLUB WALLETS",
     "ZONEID": 1
   },
   {
     "MICROID": 3,
     "MICROCHURCH": "JUDEA",
+    "REGION":"MUUNGANO AREA",
     "ZONEID": 1
   },
   {
     "MICROID": 4,
     "MICROCHURCH": "JERUSALEM",
+    "REGION":"MC-GITHUNGURI ROAD",
     "ZONEID": 1
   },
   {
     "MICROID": 5,
     "MICROCHURCH": "VINEYARD",
+    "REGION":"AIRWAYS AND ZEBRA",
     "ZONEID": 1
   },
   {
     "MICROID": 6,
     "MICROCHURCH": "GLORY",
+    "REGION":"MC AREA",
     "ZONEID": 1
   },
   {
     "MICROID": 7,
     "MICROCHURCH": "BETHSAIDIA",
+    "REGION":"ELSHADDAI TO STAGE 33",
     "ZONEID": 2
   },
   {
     "MICROID": 8,
     "MICROCHURCH": "NEEMA A",
+    "REGION":"GITHUNGURI",
     "ZONEID": 2
   },
   {
     "MICROID": 9,
     "MICROCHURCH": "NEEMA B",
+    "REGION":"GITHUNGURI AND MOSMASS",
     "ZONEID": 2
   },
   {
     "MICROID": 10,
     "MICROCHURCH": "BARAKA A",
+    "REGION":"CORNER B",
     "ZONEID": 2
   },
   {
     "MICROID": 11,
     "MICROCHURCH": "BARAKA B",
+    "REGION":"MUHURI MUCHIRI",
     "ZONEID": 2
   },
   {
     "MICROID": 12,
     "MICROCHURCH": "BETHEL",
+    "REGION":"SKYVIEW, BAKHITA, CRESENT ROAD, ELSHADDAI",
     "ZONEID": 2
   },
   {
     "MICROID": 13,
     "MICROCHURCH": "NAZARETH",
+    "REGION":"SKYVIEW TO NAIROBI CHAPEL AREA",
     "ZONEID": 2
   },
   {
     "MICROID": 14,
     "MICROCHURCH": "KINGDOM",
+    "REGION":"LEXO STATION TO FAHARI STAGE",
     "ZONEID": 2
   },
   {
     "MICROID": 15,
     "MICROCHURCH": "EBENEZER",
+    "REGION":"FAGILIA TO SHOPPING MALL",
     "ZONEID": 3
   },
   {
     "MICROID": 16,
     "MICROCHURCH": "DOMINION",
+    "REGION":"SHOPPING MALL TO CHURCH",
     "ZONEID": 3
   },
   {
     "MICROID": 17,
     "MICROCHURCH": "OVERCOMERS",
+    "REGION":"BEHIND GATES",
     "ZONEID": 3
   },
   {
     "MICROID": 18,
     "MICROCHURCH": "SHALOM",
+    "REGION":"SHALOM COURT",
     "ZONEID": 3
   },
   {
     "MICROID": 19,
     "MICROCHURCH": "SHAMMAH",
+    "REGION":"MOFARM",
     "ZONEID": 3
   },
   {
     "MICROID": 20,
     "MICROCHURCH": "VISION",
+    "REGION":"PCEA TO FAGILIA",
     "ZONEID": 3
   },
   {
     "MICROID": 21,
     "MICROCHURCH": "GENESIS",
+    "REGION":"UTAWALA ROAD AND BEHIND CHURCH",
     "ZONEID": 3
   },
   {
     "MICROID": 22,
     "MICROCHURCH": "BELIEVERS",
+    "REGION":"CHURCH (SUNDAY FELLOWSHIP)",
     "ZONEID": 3
   },
   {
     "MICROID": 23,
     "MICROCHURCH": "THRONE",
+    "REGION":"CHURCH (SUNDAY FELLOWSHIP)",
     "ZONEID": 3
   },
   {
     "MICROID": 24,
     "MICROCHURCH": "SHEKINAH",
+    "REGION":"CHURCH (SATURDAY FELLOWSHIP)",
     "ZONEID": 3
   },
   {
     "MICROID": 25,
     "MICROCHURCH": "IMANI",
+    "REGION":"BENEDICTOR",
     "ZONEID": 4
   },
   {
     "MICROID": 26,
     "MICROCHURCH": "TUMAINI",
+    "REGION":"AMANI ROYAL COURT AND SPRING FIELDS",
     "ZONEID": 4
   },
   {
     "MICROID": 27,
     "MICROCHURCH": "BEREA",
+    "REGION":"KIBIKU ROAD,BURUBURU FARM, ROPHINE",
     "ZONEID": 4
   },
   {
     "MICROID": 28,
     "MICROCHURCH": "TRANSFORMERS",
+    "REGION":"CHOKAA, BURUBURU FARM",
     "ZONEID": 4
   },
   {
     "MICROID": 29,
     "MICROCHURCH": "WISDOM A",
+    "REGION":"KWA CHIEF, V MALL, GESORA ROAD",
     "ZONEID": 4
   },
   {
     "MICROID": 30,
     "MICROCHURCH": "WISDOM B",
+    "REGION":"MIHANGO SDA, KIGWATHI ROAD",
     "ZONEID": 4
   },
   {
     "MICROID": 31,
     "MICROCHURCH": "WISDOM C",
+    "REGION":"PARK 83 COURT",
     "ZONEID": 4
   },
   {
     "MICROID": 32,
     "MICROCHURCH": "WISDOM D",
+    "REGION":"ASTROL, KARAGITA",
     "ZONEID": 4
   }
 ]
