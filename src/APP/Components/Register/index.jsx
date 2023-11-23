@@ -11,6 +11,7 @@ const AttendeeForm = () => {
     last_name: '',
     email: '',
     telephone_number: '',
+    department: '',
     micro_church: '',
     area_of_residence: '',
   });
@@ -41,6 +42,7 @@ const AttendeeForm = () => {
           last_name: '',
           email: '',
           telephone_number: '',
+          department: '',
           micro_church: '',
           area_of_residence: '',
         });
@@ -61,7 +63,7 @@ const AttendeeForm = () => {
 
   return (
     <div className="form-container">
-      <h1>Registration To Attend</h1>
+      <h1>Registration to attend Leadership Summit at PEFA Church Utawala on 02/09/2023.</h1>
       <form onSubmit={handleSubmit}>
         <br />
 
@@ -105,7 +107,14 @@ const AttendeeForm = () => {
           required
         />
         <br />
-
+        <label>Department :</label>
+        <input
+        type="text"
+        name="department"
+        value={formData.department}
+        onChange={handleChange}
+        required
+        />
         <label>Micro-Church:</label>
         <input
           type="text"

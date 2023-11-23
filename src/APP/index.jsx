@@ -14,6 +14,7 @@ import Sermons from './Pages/Sermons/Sermons';
 import Live from './Pages/Live/Live';
 import Young from './Pages/Ministries/Young/index';
 import AttendeeForm from './Components/Register';
+import Contact from './Pages/Contact';
 import MicroChurches from './Pages/Ministries/Microchurches';
 import Form from './Pages/Ministries/Microchurches/form';
 
@@ -61,6 +62,7 @@ function App() {
         <Route path='/ministries/young-adults' element={<Young />} />
         <Route path='/ministries/micro-churches' element={<MicroChurches />} />
         <Route path='/ministries/micro-churches/form' element={<Form/>} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       {showButton && (
         <button

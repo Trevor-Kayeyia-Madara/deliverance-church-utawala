@@ -14,6 +14,7 @@ const Footer = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            height: '100%',
           }}
         >
           <p style={{ fontSize: '14px' }}>© 2023 All Rights Reserved. Powered by Deliverance Church Utawala.</p>
