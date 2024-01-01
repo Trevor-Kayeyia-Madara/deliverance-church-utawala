@@ -1,7 +1,7 @@
 .bg-image {
     position: relative;
     height: 500px;
-    background-image: url('../../Images/slide-4.jpg');
+    background-image: url('../../Images/BACKGROUND.jpg');
     background-size: cover;
     background-position: center;
   }
