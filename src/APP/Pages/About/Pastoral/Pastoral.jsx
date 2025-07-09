@@ -22,12 +22,12 @@ function Pastoral() {
         "Finally, the person I wish to thank is Pastor Ouna, who broke the furrow grounds of DC-Utawala before I become the Senior Pastor. Our the years Our Church has received ministry from both local and international.Likewise, our church has touched many lives in Kenya,Africa,Europe and USA. I am convinced that God has greater things in store for DC-Utawala.The best is yet to come",
       ];
       const cardData = [
-        { imageSrc: `${Isaac}`, heading: 'Pastor Isaac and Alice' },
+        { imageSrc: `${noImage}`, heading: 'Pastor Abubakar' },
         { imageSrc: `${Gershon}`, heading: 'Pastor Gershon & Phoebe' },
         { imageSrc: `${Dennis}`, heading: 'Pastor Denis Kirogo' },
         { imageSrc: `${James}`, heading: 'Pastor James and Olive Theuri'},
         { imageSrc: `${William}`, heading: 'Pastor William Ouna'},
-        { imageSrc: `${Mercy}`, heading: 'Pastor Mercy Johns'},
+        { imageSrc: `${noImage}`, heading: 'Pastors Josiah and Lucy'},
         { imageSrc: `${noImage}`, heading: 'Pastor David and Electina Mnyera'},
         {imageSrc: `${noImage}`, heading: 'Pastor Charles and Mary'},
       ];
