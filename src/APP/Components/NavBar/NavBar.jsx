@@ -109,11 +109,6 @@ const Navbar = () => {
             </ul>
           </li>
           <li className="nav-item">
-            <Link to="/give" className="nav-links" onClick={handleMenuItemClick}>
-              Tithes &amp; Offerings
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link to="/contact" className="nav-links" onClick={handleMenuItemClick}>
               Contact Us
             </Link>

@@ -31,16 +31,12 @@ const Home = () => {
 
   const accordionItems = [
     {
-      title: 'MidWeek Servies',
+      title: 'MidWeek Services',
       content: 'Micro-Churches Tuesdays 6:30pm-8:00pm \nIgnite Service Fridays 6:30pm-8:00pm',
     },
     {
-      title: 'Main Service',
+      title: 'Sunday Service',
       content: 'Morning Prayers 6:30am-6:45am \n First Service 6:45am-9:30am \n Second Service 9:30am-12:30pm',
-    },
-    {
-      title: 'Young Adults Service',
-      content: 'Sundays 2:00pm-4:00pm .',
     },
     {
       title: 'Anchored Service',

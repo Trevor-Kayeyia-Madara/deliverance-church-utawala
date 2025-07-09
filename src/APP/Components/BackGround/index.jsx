@@ -7,11 +7,10 @@ function BackgroundImage() {
     <div className="bg-image">
       <div className="overlay"></div>
         <div className="context">
-        <h1>2024 The Year Of THRESHING THE MOUNTAINS</h1>
-          <p>"<i> Behold, I will make you into a new threshing sledge with sharp teeth;
-You shall thresh the mountains and beat them small,
-And make the hills like chaff.</i>"</p><br />
-          <p className='verse'><i>ISAIAH 41:15</i></p>
+        <h1>2025 The Year Of THRESHING THE MOUNTAINS</h1>
+          <p>"<i> For what is our hope, our joy, or the crown in which we will glory in the presence of our Lord Jesus when he comes? Is it not you?
+            </i>"</p><br />
+          <p className='verse'><i>1ST THESSALONIANS 2:19</i></p>
         </div>
           <div className = 'image'>
             <img src={Image} alt='Pastor'/>

@@ -17,7 +17,7 @@ const Footer = () => {
             height: '100%',
           }}
         >
-          <p style={{ fontSize: '14px' }}>© 2023 All Rights Reserved. Powered by Deliverance Church Utawala.</p>
+          <p style={{ fontSize: '14px' }}>© 2025 All Rights Reserved. Powered by Deliverance Church Utawala.</p>
         </div>
       </footer>
     );
